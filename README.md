@@ -1,27 +1,18 @@
-# GifsApp
+## Generar el Loader
+Vas a **https://samherbert.net/svg-loaders/** y le das a descargar en 
+Github (Esto te redirije a: https://github.com/SamHerbert/SVG-Loaders), copias el código del loader y lo pegas en un archivo de la carpeta public/assets con la extensión '.svg'.
+Y Ahora ya lo puedes usar en tu proyecto.
+Lo usas como una url para pegar en tu imagen de forma directa así:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+**src="assets/loader.svg"**
 
-## Development server
+## Generar el tipado a las peticiones HTTP
+Se utiliza->app.quicktype.io, se copia la respuesta de la petición HTTP y se la pega en este sitio.
+Se selecciona Typescript y que sólo nos muestre las interfaces y listo, estas interfaces generadas las
+utilizo en mi proyecto(Las copio en la carpeta de interfaces).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Efectos para que la card del gif no aparezca de golpe sino con un fadeIn
+Se utiliza **https://animate.style/**
+Copias el CDN que aparece es el sitio web y utilizas las clase con la animación que quieras.
+Para el caso del proyecto las clases implementadas son:
+animate__animated animate__fadeIn
